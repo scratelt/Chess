@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "chess"
+version = "0.0.1"
+description = "A Chess application written in Python using the TKinter GUI library."
+authors = [
+  "Tyson Schwartz <scratelt@yahoo.com>",
+  "Adam Scanga <sandmanscanga@gmail.com>",
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+blacken-docs = "*"
+colorlog = "*"
+ipython = "*"
+ipdb = "*"
+rich = "*"
+black = "*"
+colorama = "*"
+pre-commit = "*"
+mypy = "*"
+isort = "*"
+flake8 = "*"
+pylint = "*"
+bandit = "*"
+
+[tool.poetry.group.testing.dependencies]
+codecov = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-cov = "*"
+pytest-isort = "*"
+coverage = "*"
+
+[tool.poetry.group.docs.dependencies]
+pydocstyle = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocstrings = "*"
+mkdocstrings-python = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -164,6 +164,5 @@ cython_debug/
 *.code-workspace
 
 # Custom
-.cspell/
 private/
 logs/

@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.cspell": true,
+			"**/__pycache__": true,
+			"**/.pytest_cache": true,
+			"**/.mypy_cache": true,
+			"**/.venv": true,
+		},
+		"pylint.importStrategy": "fromEnvironment",
+		"pylint.args": [
+			"--max-line-length",
+			"79",
+		],
+		"bandit.importStrategy": "fromEnvironment",
+		"mypy-type-checker.importStrategy": "fromEnvironment",
+		"mypy-type-checker.args": [
+			"--strict",
+			// "--ignore-missing-imports",
+		],
+		"flake8.importStrategy": "fromEnvironment",
+		"black-formatter.importStrategy": "fromEnvironment",
+		"black-formatter.args": [
+			"--line-length",
+			"79"
+		],
+		"isort.importStrategy": "fromEnvironment",
+		"isort.args": [
+			"--line-length",
+			"79",
+			"--profile",
+			"black"
+		],
+		"cSpell.customDictionaries": {
+			"custom-dictionary-workspace": {
+				"name": "custom-dictionary-workspace",
+				"path": "${workspaceFolder}/.cspell/dictionary.txt",
+				"addWords": true,
+				"scope": "workspace"
+			}
+		},
+	}
+}

@@ -160,8 +160,8 @@ cython_debug/
 .idea/
 
 # VSCode
-.vscode/
-*.code-workspace
+# .vscode/
+# *.code-workspace
 
 # Custom
 private/
